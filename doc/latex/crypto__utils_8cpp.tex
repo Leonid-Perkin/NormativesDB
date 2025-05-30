@@ -1,0 +1,55 @@
+\doxysection{src/crypto\+\_\+utils.cpp File Reference}
+\hypertarget{crypto__utils_8cpp}{}\label{crypto__utils_8cpp}\index{src/crypto\_utils.cpp@{src/crypto\_utils.cpp}}
+{\ttfamily \#include "{}crypto\+\_\+utils.\+h"{}}\newline
+{\ttfamily \#include $<$openssl/evp.\+h$>$}\newline
+{\ttfamily \#include $<$openssl/sha.\+h$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for crypto\+\_\+utils.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crypto__utils_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{crypto__utils_8cpp_a016d5dccebf13f0174419222835f5f80}{encrypt\+File}} (const std\+::string \&input\+Path, const std\+::string \&output\+Path, const std\+::string \&password)
+\item 
+bool \mbox{\hyperlink{crypto__utils_8cpp_a2c1450c0c81741af5ed7ae240e7eef80}{decrypt\+File}} (const std\+::string \&input\+Path, const std\+::string \&output\+Path, const std\+::string \&password)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{crypto__utils_8cpp_a2c1450c0c81741af5ed7ae240e7eef80}\index{crypto\_utils.cpp@{crypto\_utils.cpp}!decryptFile@{decryptFile}}
+\index{decryptFile@{decryptFile}!crypto\_utils.cpp@{crypto\_utils.cpp}}
+\doxysubsubsection{\texorpdfstring{decryptFile()}{decryptFile()}}
+{\footnotesize\ttfamily \label{crypto__utils_8cpp_a2c1450c0c81741af5ed7ae240e7eef80} 
+bool decrypt\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input\+Path}{, }\item[{const std\+::string \&}]{output\+Path}{, }\item[{const std\+::string \&}]{password}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{crypto__utils_8cpp_a2c1450c0c81741af5ed7ae240e7eef80_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{crypto__utils_8cpp_a016d5dccebf13f0174419222835f5f80}\index{crypto\_utils.cpp@{crypto\_utils.cpp}!encryptFile@{encryptFile}}
+\index{encryptFile@{encryptFile}!crypto\_utils.cpp@{crypto\_utils.cpp}}
+\doxysubsubsection{\texorpdfstring{encryptFile()}{encryptFile()}}
+{\footnotesize\ttfamily \label{crypto__utils_8cpp_a016d5dccebf13f0174419222835f5f80} 
+bool encrypt\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input\+Path}{, }\item[{const std\+::string \&}]{output\+Path}{, }\item[{const std\+::string \&}]{password}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crypto__utils_8cpp_a016d5dccebf13f0174419222835f5f80_icgraph}
+\end{center}
+\end{figure}

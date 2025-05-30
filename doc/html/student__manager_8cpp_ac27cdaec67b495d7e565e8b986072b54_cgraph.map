@@ -1,0 +1,9 @@
+<map id="deleteStudent" name="deleteStudent">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,107,57"/>
+<area shape="rect" id="Node000002" href="$validation_8cpp.html#a22d7c3e857afba4903a76181f91ea9fb" title=" " alt="" coords="155,5,267,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,33,139,28,140,33,108,38"/>
+<area shape="rect" id="Node000003" href="$file__operations_8cpp.html#a3218cc673e0643b611aa88e43c12bfb0" title=" " alt="" coords="169,56,253,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="108,50,154,57,153,63,107,55"/>
+<area shape="rect" id="Node000004" href="$crypto__utils_8cpp.html#a016d5dccebf13f0174419222835f5f80" title=" " alt="" coords="315,56,400,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="253,67,300,67,300,72,253,72"/>
+</map>

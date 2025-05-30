@@ -1,0 +1,152 @@
+\doxysection{Student Struct Reference}
+\hypertarget{structStudent}{}\label{structStudent}\index{Student@{Student}}
+
+
+{\ttfamily \#include $<$student.\+h$>$}
+
+
+
+Collaboration diagram for Student\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{structStudent__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structStudent_aee5081e04bb2ba29391029163834fbb7}{print\+Table\+Row}} () const
+\item 
+\mbox{\hyperlink{structStudent_ad1acbcd2c458613945d4bf4618d1ae47}{Student}} ()=default
+\item 
+\mbox{\hyperlink{structStudent_a6efd12d4f2b179337d6c4d8718a38617}{Student}} (const std\+::string \&surname\+\_\+, const std\+::string \&initials\+\_\+, int year\+\_\+, const std\+::string \&group\+\_\+, const std\+::string \&record\+\_\+)
+\item 
+void \mbox{\hyperlink{structStudent_abdbb14cd83ef23c09f811bd1e30ddd4f}{print}} () const
+\item 
+double \mbox{\hyperlink{structStudent_a73ff8e99d90de19ea0e3b7d651684bbc}{average\+Grade}} (const std\+::string \&normative\+Type="{}"{}) const
+\item 
+bool \mbox{\hyperlink{structStudent_ad94c628835660a0fb0eef79568bf81e5}{has\+Debt}} (const std\+::string \&normative\+Type) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{structStudent_aca9046ad65e7403231633cf276043555}{print\+Table\+Header}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structStudent_a65b61fc4c68497e904b065c43f7a6967}{surname}}
+\item 
+std\+::string \mbox{\hyperlink{structStudent_ab17d1dd6c02d02da4b4eaee50aa4f1ec}{initials}}
+\item 
+int \mbox{\hyperlink{structStudent_a2e36bba41696c479ed29a5ffb0d50a62}{admission\+Year}}
+\item 
+std\+::string \mbox{\hyperlink{structStudent_abcada65b35ce125836945c3fe171b931}{group\+Name}}
+\item 
+std\+::string \mbox{\hyperlink{structStudent_abdf0e634ea23676935ad65e76413765f}{record\+Book}}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structNormative}{Normative}} $>$ $>$ \mbox{\hyperlink{structStudent_a6bf8dd85e1ddc143106bc7a6a78da6ee}{tests}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structStudent_ad1acbcd2c458613945d4bf4618d1ae47}\index{Student@{Student}!Student@{Student}}
+\index{Student@{Student}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{Student()}{Student()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{structStudent_ad1acbcd2c458613945d4bf4618d1ae47} 
+Student\+::\+Student (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{structStudent_a6efd12d4f2b179337d6c4d8718a38617}\index{Student@{Student}!Student@{Student}}
+\index{Student@{Student}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{Student()}{Student()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{structStudent_a6efd12d4f2b179337d6c4d8718a38617} 
+Student\+::\+Student (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{surname\+\_\+}{, }\item[{const std\+::string \&}]{initials\+\_\+}{, }\item[{int}]{year\+\_\+}{, }\item[{const std\+::string \&}]{group\+\_\+}{, }\item[{const std\+::string \&}]{record\+\_\+}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structStudent_a73ff8e99d90de19ea0e3b7d651684bbc}\index{Student@{Student}!averageGrade@{averageGrade}}
+\index{averageGrade@{averageGrade}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{averageGrade()}{averageGrade()}}
+{\footnotesize\ttfamily \label{structStudent_a73ff8e99d90de19ea0e3b7d651684bbc} 
+double Student\+::average\+Grade (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{normative\+Type}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption}) const}
+
+\Hypertarget{structStudent_ad94c628835660a0fb0eef79568bf81e5}\index{Student@{Student}!hasDebt@{hasDebt}}
+\index{hasDebt@{hasDebt}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{hasDebt()}{hasDebt()}}
+{\footnotesize\ttfamily \label{structStudent_ad94c628835660a0fb0eef79568bf81e5} 
+bool Student\+::has\+Debt (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{normative\+Type}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{structStudent_abdbb14cd83ef23c09f811bd1e30ddd4f}\index{Student@{Student}!print@{print}}
+\index{print@{print}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{structStudent_abdbb14cd83ef23c09f811bd1e30ddd4f} 
+void Student\+::print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{structStudent_aca9046ad65e7403231633cf276043555}\index{Student@{Student}!printTableHeader@{printTableHeader}}
+\index{printTableHeader@{printTableHeader}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{printTableHeader()}{printTableHeader()}}
+{\footnotesize\ttfamily \label{structStudent_aca9046ad65e7403231633cf276043555} 
+void Student\+::print\+Table\+Header (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structStudent_aca9046ad65e7403231633cf276043555_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{structStudent_aee5081e04bb2ba29391029163834fbb7}\index{Student@{Student}!printTableRow@{printTableRow}}
+\index{printTableRow@{printTableRow}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{printTableRow()}{printTableRow()}}
+{\footnotesize\ttfamily \label{structStudent_aee5081e04bb2ba29391029163834fbb7} 
+void Student\+::print\+Table\+Row (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structStudent_a2e36bba41696c479ed29a5ffb0d50a62}\index{Student@{Student}!admissionYear@{admissionYear}}
+\index{admissionYear@{admissionYear}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{admissionYear}{admissionYear}}
+{\footnotesize\ttfamily \label{structStudent_a2e36bba41696c479ed29a5ffb0d50a62} 
+int Student\+::admission\+Year}
+
+\Hypertarget{structStudent_abcada65b35ce125836945c3fe171b931}\index{Student@{Student}!groupName@{groupName}}
+\index{groupName@{groupName}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{groupName}{groupName}}
+{\footnotesize\ttfamily \label{structStudent_abcada65b35ce125836945c3fe171b931} 
+std\+::string Student\+::group\+Name}
+
+\Hypertarget{structStudent_ab17d1dd6c02d02da4b4eaee50aa4f1ec}\index{Student@{Student}!initials@{initials}}
+\index{initials@{initials}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{initials}{initials}}
+{\footnotesize\ttfamily \label{structStudent_ab17d1dd6c02d02da4b4eaee50aa4f1ec} 
+std\+::string Student\+::initials}
+
+\Hypertarget{structStudent_abdf0e634ea23676935ad65e76413765f}\index{Student@{Student}!recordBook@{recordBook}}
+\index{recordBook@{recordBook}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{recordBook}{recordBook}}
+{\footnotesize\ttfamily \label{structStudent_abdf0e634ea23676935ad65e76413765f} 
+std\+::string Student\+::record\+Book}
+
+\Hypertarget{structStudent_a65b61fc4c68497e904b065c43f7a6967}\index{Student@{Student}!surname@{surname}}
+\index{surname@{surname}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{surname}{surname}}
+{\footnotesize\ttfamily \label{structStudent_a65b61fc4c68497e904b065c43f7a6967} 
+std\+::string Student\+::surname}
+
+\Hypertarget{structStudent_a6bf8dd85e1ddc143106bc7a6a78da6ee}\index{Student@{Student}!tests@{tests}}
+\index{tests@{tests}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{tests}{tests}}
+{\footnotesize\ttfamily \label{structStudent_a6bf8dd85e1ddc143106bc7a6a78da6ee} 
+std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{structNormative}{Normative}}$>$ $>$ Student\+::tests}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{student_8h}{student.\+h}}\item 
+src/\mbox{\hyperlink{student_8cpp}{student.\+cpp}}\end{DoxyCompactItemize}

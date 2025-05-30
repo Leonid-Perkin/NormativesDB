@@ -1,0 +1,37 @@
+\doxysection{student.\+h}
+\hypertarget{student_8h_source}{}\label{student_8h_source}\index{include/student.h@{include/student.h}}
+\mbox{\hyperlink{student_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ STUDENT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ STUDENT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{normative_8h}{normative.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structStudent}{Student}}\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structStudent_aca9046ad65e7403231633cf276043555}{printTableHeader}}();}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structStudent_aee5081e04bb2ba29391029163834fbb7}{printTableRow}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00012\ \ \ \ \ std::string\ \mbox{\hyperlink{structStudent_a65b61fc4c68497e904b065c43f7a6967}{surname}};}
+\DoxyCodeLine{00013\ \ \ \ \ std::string\ \mbox{\hyperlink{structStudent_ab17d1dd6c02d02da4b4eaee50aa4f1ec}{initials}};}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structStudent_a2e36bba41696c479ed29a5ffb0d50a62}{admissionYear}};}
+\DoxyCodeLine{00015\ \ \ \ \ std::string\ \mbox{\hyperlink{structStudent_abcada65b35ce125836945c3fe171b931}{groupName}};}
+\DoxyCodeLine{00016\ \ \ \ \ std::string\ \mbox{\hyperlink{structStudent_abdf0e634ea23676935ad65e76413765f}{recordBook}};}
+\DoxyCodeLine{00017\ \ \ \ \ std::vector<std::shared\_ptr<Normative>>\ \mbox{\hyperlink{structStudent_a6bf8dd85e1ddc143106bc7a6a78da6ee}{tests}};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{structStudent_ad1acbcd2c458613945d4bf4618d1ae47}{Student}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{structStudent_a6efd12d4f2b179337d6c4d8718a38617}{Student}}(\textcolor{keyword}{const}\ std::string\&\ surname\_,\ \textcolor{keyword}{const}\ std::string\&\ initials\_,\ \textcolor{keywordtype}{int}\ year\_,}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ group\_,\ \textcolor{keyword}{const}\ std::string\&\ record\_)}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{structStudent_a65b61fc4c68497e904b065c43f7a6967}{surname}}(surname\_),\ \mbox{\hyperlink{structStudent_ab17d1dd6c02d02da4b4eaee50aa4f1ec}{initials}}(initials\_),\ \mbox{\hyperlink{structStudent_a2e36bba41696c479ed29a5ffb0d50a62}{admissionYear}}(year\_),}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structStudent_abcada65b35ce125836945c3fe171b931}{groupName}}(group\_),\ \mbox{\hyperlink{structStudent_abdf0e634ea23676935ad65e76413765f}{recordBook}}(record\_)\ \{\}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structStudent_abdbb14cd83ef23c09f811bd1e30ddd4f}{print}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structStudent_a73ff8e99d90de19ea0e3b7d651684bbc}{averageGrade}}(\textcolor{keyword}{const}\ std::string\&\ normativeType\ =\ \textcolor{stringliteral}{"{}"{}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structStudent_ad94c628835660a0fb0eef79568bf81e5}{hasDebt}}(\textcolor{keyword}{const}\ std::string\&\ normativeType)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

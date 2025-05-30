@@ -1,0 +1,93 @@
+\doxysection{normative.\+h}
+\hypertarget{normative_8h_source}{}\label{normative_8h_source}\index{include/normative.h@{include/normative.h}}
+\mbox{\hyperlink{normative_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ NORMATIVE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ NORMATIVE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structNormative}{Normative}}\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ std::string\ \mbox{\hyperlink{structNormative_a8c67336fd5748a330e090a2278d7e059}{name}};}
+\DoxyCodeLine{00010\ \ \ \ \ std::string\ \mbox{\hyperlink{structNormative_a05ebcdc08140c208af02be57f656f28c}{date}};}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structNormative_ab21d80a1a7f9c020fb49df468b42a272}{result}};}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structNormative_abe4ca57b993d6db85667e7d49a0b89de}{grade}};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{structNormative_a95e047fad8548148d58c12e9cfe9bdbe}{Normative}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{structNormative_a61871ee25976c984e97c608f1ca29929}{Normative}}(\textcolor{keyword}{const}\ std::string\&\ name\_,\ \textcolor{keyword}{const}\ std::string\&\ date\_,\ \textcolor{keywordtype}{double}\ result\_,\ \textcolor{keywordtype}{int}\ grade\_)}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{structNormative_a8c67336fd5748a330e090a2278d7e059}{name}}(name\_),\ \mbox{\hyperlink{structNormative_a05ebcdc08140c208af02be57f656f28c}{date}}(date\_),\ \mbox{\hyperlink{structNormative_ab21d80a1a7f9c020fb49df468b42a272}{result}}(result\_),\ \mbox{\hyperlink{structNormative_abe4ca57b993d6db85667e7d49a0b89de}{grade}}(grade\_)\ \{\}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{structNormative_aa513c78938ffcec8af79fc22271d9a78}{\string~Normative}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structNormative_af06eab86ae2c7f80b17d9156a220e535}{print}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{virtual}\ std::shared\_ptr<Normative>\ \mbox{\hyperlink{structNormative_a283b8c29d439b397cfec8f18cb90fb9a}{clone}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00021\ \};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structRun100}{Run100}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{structNormative}{Normative}}\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{structRun100_ae61bb134211f533aef0c2098d57f60e4}{Run100}}()\ \{\ \mbox{\hyperlink{structNormative_a8c67336fd5748a330e090a2278d7e059}{name}}\ =\ \textcolor{stringliteral}{"{}Бег\ 100м"{}};\ \}}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{structRun100_a0ec57ac8c610eec79fa1e20ef2dc675c}{Run100}}(\textcolor{keyword}{const}\ std::string\&\ date\_,\ \textcolor{keywordtype}{double}\ result\_,\ \textcolor{keywordtype}{int}\ grade\_)\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNormative_a8c67336fd5748a330e090a2278d7e059}{name}}\ =\ \textcolor{stringliteral}{"{}Бег\ 100м"{}};}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNormative_a05ebcdc08140c208af02be57f656f28c}{date}}\ =\ date\_;}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNormative_ab21d80a1a7f9c020fb49df468b42a272}{result}}\ =\ result\_;}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNormative_abe4ca57b993d6db85667e7d49a0b89de}{grade}}\ =\ grade\_;}
+\DoxyCodeLine{00030\ \ \ \ \ \}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structRun100_a9d0da619168badd1319310b498e779be}{print}}()\textcolor{keyword}{\ const\ override\ }\{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ std::cout\ <<\ \mbox{\hyperlink{structNormative_a8c67336fd5748a330e090a2278d7e059}{name}}\ <<\ \textcolor{stringliteral}{"{}\ |\ Дата:\ "{}}\ <<\ \mbox{\hyperlink{structNormative_a05ebcdc08140c208af02be57f656f28c}{date}}\ <<\ \textcolor{stringliteral}{"{}\ |\ Результат:\ "{}}\ <<\ \mbox{\hyperlink{structNormative_ab21d80a1a7f9c020fb49df468b42a272}{result}}\ <<\ \textcolor{stringliteral}{"{}\ |\ Оценка:\ "{}}\ <<\ \mbox{\hyperlink{structNormative_abe4ca57b993d6db85667e7d49a0b89de}{grade}}\ <<\ \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00033\ \ \ \ \ \}}
+\DoxyCodeLine{00034\ \ \ \ \ std::shared\_ptr<Normative>\ \mbox{\hyperlink{structRun100_a544bb64e5d562072978dfe8bccd17019}{clone}}()\textcolor{keyword}{\ const\ override\ }\{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::make\_shared<Run100>(*\textcolor{keyword}{this});}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+\DoxyCodeLine{00037\ \};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structRun1000}{Run1000}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{structNormative}{Normative}}\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{structRun1000_a48bff800ae1fb310621f916014686cbe}{Run1000}}()\ \{\ \mbox{\hyperlink{structNormative_a8c67336fd5748a330e090a2278d7e059}{name}}\ =\ \textcolor{stringliteral}{"{}Бег\ 1000м"{}};\ \}}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{structRun1000_a939cb265f8f62252c29881b2f2457188}{Run1000}}(\textcolor{keyword}{const}\ std::string\&\ date\_,\ \textcolor{keywordtype}{double}\ result\_,\ \textcolor{keywordtype}{int}\ grade\_)\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNormative_a8c67336fd5748a330e090a2278d7e059}{name}}\ =\ \textcolor{stringliteral}{"{}Бег\ 1000м"{}};}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNormative_a05ebcdc08140c208af02be57f656f28c}{date}}\ =\ date\_;}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNormative_ab21d80a1a7f9c020fb49df468b42a272}{result}}\ =\ result\_;}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNormative_abe4ca57b993d6db85667e7d49a0b89de}{grade}}\ =\ grade\_;}
+\DoxyCodeLine{00046\ \ \ \ \ \}}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structRun1000_a6ee924f97af0376462aab68e7cfa7f9d}{print}}()\textcolor{keyword}{\ const\ override\ }\{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ std::cout\ <<\ \mbox{\hyperlink{structNormative_a8c67336fd5748a330e090a2278d7e059}{name}}\ <<\ \textcolor{stringliteral}{"{}\ |\ Дата:\ "{}}\ <<\ \mbox{\hyperlink{structNormative_a05ebcdc08140c208af02be57f656f28c}{date}}\ <<\ \textcolor{stringliteral}{"{}\ |\ Результат:\ "{}}\ <<\ \mbox{\hyperlink{structNormative_ab21d80a1a7f9c020fb49df468b42a272}{result}}\ <<\ \textcolor{stringliteral}{"{}\ |\ Оценка:\ "{}}\ <<\ \mbox{\hyperlink{structNormative_abe4ca57b993d6db85667e7d49a0b89de}{grade}}\ <<\ \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00049\ \ \ \ \ \}}
+\DoxyCodeLine{00050\ \ \ \ \ std::shared\_ptr<Normative>\ \mbox{\hyperlink{structRun1000_a8de1541529619c56cc224da3be756938}{clone}}()\textcolor{keyword}{\ const\ override\ }\{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::make\_shared<Run1000>(*\textcolor{keyword}{this});}
+\DoxyCodeLine{00052\ \ \ \ \ \}}
+\DoxyCodeLine{00053\ \};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structPullUps}{PullUps}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{structNormative}{Normative}}\ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{structPullUps_a4d102423498b6d56d1d4ed968c7bb443}{PullUps}}()\ \{\ \mbox{\hyperlink{structNormative_a8c67336fd5748a330e090a2278d7e059}{name}}\ =\ \textcolor{stringliteral}{"{}Подтягивания"{}};\ \}}
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{structPullUps_ab439f4aa8f82335f1b0f54ce5c59921b}{PullUps}}(\textcolor{keyword}{const}\ std::string\&\ date\_,\ \textcolor{keywordtype}{double}\ result\_,\ \textcolor{keywordtype}{int}\ grade\_)\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNormative_a8c67336fd5748a330e090a2278d7e059}{name}}\ =\ \textcolor{stringliteral}{"{}Подтягивания"{}};}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNormative_a05ebcdc08140c208af02be57f656f28c}{date}}\ =\ date\_;}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNormative_ab21d80a1a7f9c020fb49df468b42a272}{result}}\ =\ result\_;}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNormative_abe4ca57b993d6db85667e7d49a0b89de}{grade}}\ =\ grade\_;}
+\DoxyCodeLine{00062\ \ \ \ \ \}}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structPullUps_ad2dab6dd8c073b0da6558097863fa136}{print}}()\textcolor{keyword}{\ const\ override\ }\{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ std::cout\ <<\ \mbox{\hyperlink{structNormative_a8c67336fd5748a330e090a2278d7e059}{name}}\ <<\ \textcolor{stringliteral}{"{}\ |\ Дата:\ "{}}\ <<\ \mbox{\hyperlink{structNormative_a05ebcdc08140c208af02be57f656f28c}{date}}\ <<\ \textcolor{stringliteral}{"{}\ |\ Результат:\ "{}}\ <<\ \mbox{\hyperlink{structNormative_ab21d80a1a7f9c020fb49df468b42a272}{result}}\ <<\ \textcolor{stringliteral}{"{}\ |\ Оценка:\ "{}}\ <<\ \mbox{\hyperlink{structNormative_abe4ca57b993d6db85667e7d49a0b89de}{grade}}\ <<\ \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00065\ \ \ \ \ \}}
+\DoxyCodeLine{00066\ \ \ \ \ std::shared\_ptr<Normative>\ \mbox{\hyperlink{structPullUps_a95202fa6e73e5ea6dad2b20cf4414e63}{clone}}()\textcolor{keyword}{\ const\ override\ }\{}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::make\_shared<PullUps>(*\textcolor{keyword}{this});}
+\DoxyCodeLine{00068\ \ \ \ \ \}}
+\DoxyCodeLine{00069\ \};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structSwim}{Swim}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{structNormative}{Normative}}\ \{}
+\DoxyCodeLine{00072\ \ \ \ \ \mbox{\hyperlink{structSwim_a291dd18bef30e30368715aac1dd917ce}{Swim}}()\ \{\ \mbox{\hyperlink{structNormative_a8c67336fd5748a330e090a2278d7e059}{name}}\ =\ \textcolor{stringliteral}{"{}Плавание"{}};\ \}}
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{structSwim_ad22b5e6f7e7c37e9625c3a0aabce483c}{Swim}}(\textcolor{keyword}{const}\ std::string\&\ date\_,\ \textcolor{keywordtype}{double}\ result\_,\ \textcolor{keywordtype}{int}\ grade\_)\ \{}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNormative_a8c67336fd5748a330e090a2278d7e059}{name}}\ =\ \textcolor{stringliteral}{"{}Плавание"{}};}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNormative_a05ebcdc08140c208af02be57f656f28c}{date}}\ =\ date\_;}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNormative_ab21d80a1a7f9c020fb49df468b42a272}{result}}\ =\ result\_;}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNormative_abe4ca57b993d6db85667e7d49a0b89de}{grade}}\ =\ grade\_;}
+\DoxyCodeLine{00078\ \ \ \ \ \}}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structSwim_a62b166521e00070606ca0173a43a58fd}{print}}()\textcolor{keyword}{\ const\ override\ }\{}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ std::cout\ <<\ \mbox{\hyperlink{structNormative_a8c67336fd5748a330e090a2278d7e059}{name}}\ <<\ \textcolor{stringliteral}{"{}\ |\ Дата:\ "{}}\ <<\ \mbox{\hyperlink{structNormative_a05ebcdc08140c208af02be57f656f28c}{date}}\ <<\ \textcolor{stringliteral}{"{}\ |\ Результат:\ "{}}\ <<\ \mbox{\hyperlink{structNormative_ab21d80a1a7f9c020fb49df468b42a272}{result}}\ <<\ \textcolor{stringliteral}{"{}\ |\ Оценка:\ "{}}\ <<\ \mbox{\hyperlink{structNormative_abe4ca57b993d6db85667e7d49a0b89de}{grade}}\ <<\ \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00081\ \ \ \ \ \}}
+\DoxyCodeLine{00082\ \ \ \ \ std::shared\_ptr<Normative>\ \mbox{\hyperlink{structSwim_a4d315377135224d9cb3f3c198581f352}{clone}}()\textcolor{keyword}{\ const\ override\ }\{}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::make\_shared<Swim>(*\textcolor{keyword}{this});}
+\DoxyCodeLine{00084\ \ \ \ \ \}}
+\DoxyCodeLine{00085\ \};}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

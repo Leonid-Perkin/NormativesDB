@@ -1,0 +1,208 @@
+\doxysection{src/student\+\_\+manager.cpp File Reference}
+\hypertarget{student__manager_8cpp}{}\label{student__manager_8cpp}\index{src/student\_manager.cpp@{src/student\_manager.cpp}}
+{\ttfamily \#include "{}student\+\_\+manager.\+h"{}}\newline
+{\ttfamily \#include "{}validation.\+h"{}}\newline
+{\ttfamily \#include "{}file\+\_\+operations.\+h"{}}\newline
+{\ttfamily \#include "{}txt\+\_\+importer.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+Include dependency graph for student\+\_\+manager.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{student__manager_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{student__manager_8cpp_aba5bd9067aa6f261123165a337c7957d}{show\+Menu}} ()
+\item 
+void \mbox{\hyperlink{student__manager_8cpp_a296bc20e4de770091ae3270bbca51366}{add\+Student}} (std\+::vector$<$ \mbox{\hyperlink{structStudent}{Student}} $>$ \&\mbox{\hyperlink{main_8cpp_a1d76cb9de42534708ee8f41658130a39}{students}})
+\item 
+void \mbox{\hyperlink{student__manager_8cpp_ac27cdaec67b495d7e565e8b986072b54}{delete\+Student}} (std\+::vector$<$ \mbox{\hyperlink{structStudent}{Student}} $>$ \&\mbox{\hyperlink{main_8cpp_a1d76cb9de42534708ee8f41658130a39}{students}})
+\item 
+void \mbox{\hyperlink{student__manager_8cpp_ac68e9c50d3fd6078f5a0444642c6573e}{edit\+Student}} (std\+::vector$<$ \mbox{\hyperlink{structStudent}{Student}} $>$ \&\mbox{\hyperlink{main_8cpp_a1d76cb9de42534708ee8f41658130a39}{students}})
+\item 
+void \mbox{\hyperlink{student__manager_8cpp_ab0cbebb5901286c6adb31d16dfb9b3e2}{print\+All}} (const std\+::vector$<$ \mbox{\hyperlink{structStudent}{Student}} $>$ \&\mbox{\hyperlink{main_8cpp_a1d76cb9de42534708ee8f41658130a39}{students}})
+\item 
+void \mbox{\hyperlink{student__manager_8cpp_a15e7f6f8aa15eac4382c790faa278a04}{print\+Debtors\+By\+Norm}} (const std\+::vector$<$ \mbox{\hyperlink{structStudent}{Student}} $>$ \&\mbox{\hyperlink{main_8cpp_a1d76cb9de42534708ee8f41658130a39}{students}})
+\item 
+void \mbox{\hyperlink{student__manager_8cpp_ac8f01328323e90040f53c9effab02c19}{sort\+Groups\+By\+Avg\+Grade}} (const std\+::vector$<$ \mbox{\hyperlink{structStudent}{Student}} $>$ \&\mbox{\hyperlink{main_8cpp_a1d76cb9de42534708ee8f41658130a39}{students}})
+\item 
+void \mbox{\hyperlink{student__manager_8cpp_a59cac15328c5b875dbe9096b5f9aa15d}{import\+From\+Txt}} (std\+::vector$<$ \mbox{\hyperlink{structStudent}{Student}} $>$ \&\mbox{\hyperlink{main_8cpp_a1d76cb9de42534708ee8f41658130a39}{students}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{student__manager_8cpp_a296bc20e4de770091ae3270bbca51366}\index{student\_manager.cpp@{student\_manager.cpp}!addStudent@{addStudent}}
+\index{addStudent@{addStudent}!student\_manager.cpp@{student\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{addStudent()}{addStudent()}}
+{\footnotesize\ttfamily \label{student__manager_8cpp_a296bc20e4de770091ae3270bbca51366} 
+void add\+Student (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structStudent}{Student}} $>$ \&}]{students}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{student__manager_8cpp_a296bc20e4de770091ae3270bbca51366_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{student__manager_8cpp_a296bc20e4de770091ae3270bbca51366_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{student__manager_8cpp_ac27cdaec67b495d7e565e8b986072b54}\index{student\_manager.cpp@{student\_manager.cpp}!deleteStudent@{deleteStudent}}
+\index{deleteStudent@{deleteStudent}!student\_manager.cpp@{student\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{deleteStudent()}{deleteStudent()}}
+{\footnotesize\ttfamily \label{student__manager_8cpp_ac27cdaec67b495d7e565e8b986072b54} 
+void delete\+Student (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structStudent}{Student}} $>$ \&}]{students}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{student__manager_8cpp_ac27cdaec67b495d7e565e8b986072b54_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{student__manager_8cpp_ac27cdaec67b495d7e565e8b986072b54_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{student__manager_8cpp_ac68e9c50d3fd6078f5a0444642c6573e}\index{student\_manager.cpp@{student\_manager.cpp}!editStudent@{editStudent}}
+\index{editStudent@{editStudent}!student\_manager.cpp@{student\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{editStudent()}{editStudent()}}
+{\footnotesize\ttfamily \label{student__manager_8cpp_ac68e9c50d3fd6078f5a0444642c6573e} 
+void edit\+Student (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structStudent}{Student}} $>$ \&}]{students}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{student__manager_8cpp_ac68e9c50d3fd6078f5a0444642c6573e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{student__manager_8cpp_ac68e9c50d3fd6078f5a0444642c6573e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{student__manager_8cpp_a59cac15328c5b875dbe9096b5f9aa15d}\index{student\_manager.cpp@{student\_manager.cpp}!importFromTxt@{importFromTxt}}
+\index{importFromTxt@{importFromTxt}!student\_manager.cpp@{student\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{importFromTxt()}{importFromTxt()}}
+{\footnotesize\ttfamily \label{student__manager_8cpp_a59cac15328c5b875dbe9096b5f9aa15d} 
+void import\+From\+Txt (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structStudent}{Student}} $>$ \&}]{students}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{student__manager_8cpp_a59cac15328c5b875dbe9096b5f9aa15d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{student__manager_8cpp_a59cac15328c5b875dbe9096b5f9aa15d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{student__manager_8cpp_ab0cbebb5901286c6adb31d16dfb9b3e2}\index{student\_manager.cpp@{student\_manager.cpp}!printAll@{printAll}}
+\index{printAll@{printAll}!student\_manager.cpp@{student\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{printAll()}{printAll()}}
+{\footnotesize\ttfamily \label{student__manager_8cpp_ab0cbebb5901286c6adb31d16dfb9b3e2} 
+void print\+All (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structStudent}{Student}} $>$ \&}]{students}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{student__manager_8cpp_ab0cbebb5901286c6adb31d16dfb9b3e2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{student__manager_8cpp_ab0cbebb5901286c6adb31d16dfb9b3e2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{student__manager_8cpp_a15e7f6f8aa15eac4382c790faa278a04}\index{student\_manager.cpp@{student\_manager.cpp}!printDebtorsByNorm@{printDebtorsByNorm}}
+\index{printDebtorsByNorm@{printDebtorsByNorm}!student\_manager.cpp@{student\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{printDebtorsByNorm()}{printDebtorsByNorm()}}
+{\footnotesize\ttfamily \label{student__manager_8cpp_a15e7f6f8aa15eac4382c790faa278a04} 
+void print\+Debtors\+By\+Norm (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structStudent}{Student}} $>$ \&}]{students}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{student__manager_8cpp_a15e7f6f8aa15eac4382c790faa278a04_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{student__manager_8cpp_a15e7f6f8aa15eac4382c790faa278a04_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{student__manager_8cpp_aba5bd9067aa6f261123165a337c7957d}\index{student\_manager.cpp@{student\_manager.cpp}!showMenu@{showMenu}}
+\index{showMenu@{showMenu}!student\_manager.cpp@{student\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{showMenu()}{showMenu()}}
+{\footnotesize\ttfamily \label{student__manager_8cpp_aba5bd9067aa6f261123165a337c7957d} 
+void show\+Menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{student__manager_8cpp_aba5bd9067aa6f261123165a337c7957d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{student__manager_8cpp_ac8f01328323e90040f53c9effab02c19}\index{student\_manager.cpp@{student\_manager.cpp}!sortGroupsByAvgGrade@{sortGroupsByAvgGrade}}
+\index{sortGroupsByAvgGrade@{sortGroupsByAvgGrade}!student\_manager.cpp@{student\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{sortGroupsByAvgGrade()}{sortGroupsByAvgGrade()}}
+{\footnotesize\ttfamily \label{student__manager_8cpp_ac8f01328323e90040f53c9effab02c19} 
+void sort\+Groups\+By\+Avg\+Grade (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structStudent}{Student}} $>$ \&}]{students}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{student__manager_8cpp_ac8f01328323e90040f53c9effab02c19_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{student__manager_8cpp_ac8f01328323e90040f53c9effab02c19_icgraph}
+\end{center}
+\end{figure}

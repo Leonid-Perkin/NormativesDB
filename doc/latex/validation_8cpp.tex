@@ -1,0 +1,101 @@
+\doxysection{src/validation.cpp File Reference}
+\hypertarget{validation_8cpp}{}\label{validation_8cpp}\index{src/validation.cpp@{src/validation.cpp}}
+{\ttfamily \#include "{}validation.\+h"{}}\newline
+{\ttfamily \#include $<$regex$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+Include dependency graph for validation.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{validation_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{validation_8cpp_a56a7f8014e1247ef1241f603bf8b98b9}{is\+Valid\+Name}} (const std\+::string \&str)
+\item 
+bool \mbox{\hyperlink{validation_8cpp_a2c5bd10f6a2cf42d366fcb1c79442d16}{is\+Valid\+Group\+Name}} (const std\+::string \&str)
+\item 
+bool \mbox{\hyperlink{validation_8cpp_a5af6e666c07b7851889ae4f3ec81ff77}{is\+Valid\+Date}} (const std\+::string \&date)
+\item 
+bool \mbox{\hyperlink{validation_8cpp_a61544b32391e0579f222c45b1a0af56a}{is\+Valid\+Year}} (int year)
+\item 
+void \mbox{\hyperlink{validation_8cpp_a22d7c3e857afba4903a76181f91ea9fb}{clear\+Input\+Buffer}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{validation_8cpp_a22d7c3e857afba4903a76181f91ea9fb}\index{validation.cpp@{validation.cpp}!clearInputBuffer@{clearInputBuffer}}
+\index{clearInputBuffer@{clearInputBuffer}!validation.cpp@{validation.cpp}}
+\doxysubsubsection{\texorpdfstring{clearInputBuffer()}{clearInputBuffer()}}
+{\footnotesize\ttfamily \label{validation_8cpp_a22d7c3e857afba4903a76181f91ea9fb} 
+void clear\+Input\+Buffer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{validation_8cpp_a22d7c3e857afba4903a76181f91ea9fb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{validation_8cpp_a5af6e666c07b7851889ae4f3ec81ff77}\index{validation.cpp@{validation.cpp}!isValidDate@{isValidDate}}
+\index{isValidDate@{isValidDate}!validation.cpp@{validation.cpp}}
+\doxysubsubsection{\texorpdfstring{isValidDate()}{isValidDate()}}
+{\footnotesize\ttfamily \label{validation_8cpp_a5af6e666c07b7851889ae4f3ec81ff77} 
+bool is\+Valid\+Date (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{date}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{validation_8cpp_a5af6e666c07b7851889ae4f3ec81ff77_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{validation_8cpp_a2c5bd10f6a2cf42d366fcb1c79442d16}\index{validation.cpp@{validation.cpp}!isValidGroupName@{isValidGroupName}}
+\index{isValidGroupName@{isValidGroupName}!validation.cpp@{validation.cpp}}
+\doxysubsubsection{\texorpdfstring{isValidGroupName()}{isValidGroupName()}}
+{\footnotesize\ttfamily \label{validation_8cpp_a2c5bd10f6a2cf42d366fcb1c79442d16} 
+bool is\+Valid\+Group\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{validation_8cpp_a2c5bd10f6a2cf42d366fcb1c79442d16_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{validation_8cpp_a56a7f8014e1247ef1241f603bf8b98b9}\index{validation.cpp@{validation.cpp}!isValidName@{isValidName}}
+\index{isValidName@{isValidName}!validation.cpp@{validation.cpp}}
+\doxysubsubsection{\texorpdfstring{isValidName()}{isValidName()}}
+{\footnotesize\ttfamily \label{validation_8cpp_a56a7f8014e1247ef1241f603bf8b98b9} 
+bool is\+Valid\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{validation_8cpp_a56a7f8014e1247ef1241f603bf8b98b9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{validation_8cpp_a61544b32391e0579f222c45b1a0af56a}\index{validation.cpp@{validation.cpp}!isValidYear@{isValidYear}}
+\index{isValidYear@{isValidYear}!validation.cpp@{validation.cpp}}
+\doxysubsubsection{\texorpdfstring{isValidYear()}{isValidYear()}}
+{\footnotesize\ttfamily \label{validation_8cpp_a61544b32391e0579f222c45b1a0af56a} 
+bool is\+Valid\+Year (\begin{DoxyParamCaption}\item[{int}]{year}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{validation_8cpp_a61544b32391e0579f222c45b1a0af56a_icgraph}
+\end{center}
+\end{figure}

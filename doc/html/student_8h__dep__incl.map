@@ -1,0 +1,22 @@
+<map id="include/student.h" name="include/student.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="413,5,534,32"/>
+<area shape="rect" id="Node000002" href="$file__operations_8h.html" title=" " alt="" coords="108,80,269,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="410,39,239,82,238,77,408,34"/>
+<area shape="rect" id="Node000006" href="$student__manager_8h.html" title=" " alt="" coords="293,80,470,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="447,44,399,82,396,78,444,40"/>
+<area shape="rect" id="Node000007" href="$txt__importer_8h.html" title=" " alt="" coords="494,80,640,107"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="503,40,552,77,549,82,500,44"/>
+<area shape="rect" id="Node000009" href="$student_8cpp.html" title=" " alt="" coords="664,80,776,107"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="532,34,678,77,676,82,530,39"/>
+<area shape="rect" id="Node000003" href="$file__operations_8cpp.html" title=" " alt="" coords="5,155,158,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="159,118,102,156,99,152,156,113"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html" title=" " alt="" coords="181,155,278,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="205,119,225,153,220,156,200,122"/>
+<area shape="rect" id="Node000005" href="$student__manager_8cpp.html" title=" " alt="" coords="301,155,470,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="238,110,352,152,350,157,236,115"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="343,116,257,156,255,152,340,111"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="386,122,387,154,382,154,380,123"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="522,115,418,157,416,152,520,110"/>
+<area shape="rect" id="Node000008" href="$txt__importer_8cpp.html" title=" " alt="" coords="498,155,636,181"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="570,122,570,154,564,154,564,122"/>
+</map>

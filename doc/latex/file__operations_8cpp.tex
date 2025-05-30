@@ -1,0 +1,99 @@
+\doxysection{src/file\+\_\+operations.cpp File Reference}
+\hypertarget{file__operations_8cpp}{}\label{file__operations_8cpp}\index{src/file\_operations.cpp@{src/file\_operations.cpp}}
+{\ttfamily \#include "{}file\+\_\+operations.\+h"{}}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include "{}normative.\+h"{}}\newline
+{\ttfamily \#include "{}crypto\+\_\+utils.\+h"{}}\newline
+Include dependency graph for file\+\_\+operations.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{file__operations_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{file__operations_8cpp_a3218cc673e0643b611aa88e43c12bfb0}{save\+To\+File}} (const std\+::vector$<$ \mbox{\hyperlink{structStudent}{Student}} $>$ \&\mbox{\hyperlink{main_8cpp_a1d76cb9de42534708ee8f41658130a39}{students}})
+\item 
+void \mbox{\hyperlink{file__operations_8cpp_a4e140f80f8c5260bbb80e7e06e0b9e55}{load\+From\+File}} (std\+::vector$<$ \mbox{\hyperlink{structStudent}{Student}} $>$ \&\mbox{\hyperlink{main_8cpp_a1d76cb9de42534708ee8f41658130a39}{students}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \mbox{\hyperlink{file__operations_8cpp_a4c086f0a8df42accf25c9a4336c148c3}{TEMP\+\_\+\+DATA\+\_\+\+FILE}} = "{}data\+\_\+raw.\+bin"{}
+\item 
+const std\+::string \mbox{\hyperlink{file__operations_8cpp_a9fcd6d4aee0d25fe1cde5a1c25337b47}{ENCRYPTED\+\_\+\+FILE}} = "{}data.\+bin.\+enc"{}
+\item 
+const std\+::string \mbox{\hyperlink{file__operations_8cpp_a39c84768b651c79deaa506fb9db50ad0}{ENCRYPTION\+\_\+\+PASSWORD}} = "{}Cyber\+Owl-\/CTF"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{file__operations_8cpp_a4e140f80f8c5260bbb80e7e06e0b9e55}\index{file\_operations.cpp@{file\_operations.cpp}!loadFromFile@{loadFromFile}}
+\index{loadFromFile@{loadFromFile}!file\_operations.cpp@{file\_operations.cpp}}
+\doxysubsubsection{\texorpdfstring{loadFromFile()}{loadFromFile()}}
+{\footnotesize\ttfamily \label{file__operations_8cpp_a4e140f80f8c5260bbb80e7e06e0b9e55} 
+void load\+From\+File (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structStudent}{Student}} $>$ \&}]{students}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{file__operations_8cpp_a4e140f80f8c5260bbb80e7e06e0b9e55_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{file__operations_8cpp_a4e140f80f8c5260bbb80e7e06e0b9e55_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{file__operations_8cpp_a3218cc673e0643b611aa88e43c12bfb0}\index{file\_operations.cpp@{file\_operations.cpp}!saveToFile@{saveToFile}}
+\index{saveToFile@{saveToFile}!file\_operations.cpp@{file\_operations.cpp}}
+\doxysubsubsection{\texorpdfstring{saveToFile()}{saveToFile()}}
+{\footnotesize\ttfamily \label{file__operations_8cpp_a3218cc673e0643b611aa88e43c12bfb0} 
+void save\+To\+File (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structStudent}{Student}} $>$ \&}]{students}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{file__operations_8cpp_a3218cc673e0643b611aa88e43c12bfb0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{file__operations_8cpp_a3218cc673e0643b611aa88e43c12bfb0_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{file__operations_8cpp_a9fcd6d4aee0d25fe1cde5a1c25337b47}\index{file\_operations.cpp@{file\_operations.cpp}!ENCRYPTED\_FILE@{ENCRYPTED\_FILE}}
+\index{ENCRYPTED\_FILE@{ENCRYPTED\_FILE}!file\_operations.cpp@{file\_operations.cpp}}
+\doxysubsubsection{\texorpdfstring{ENCRYPTED\_FILE}{ENCRYPTED\_FILE}}
+{\footnotesize\ttfamily \label{file__operations_8cpp_a9fcd6d4aee0d25fe1cde5a1c25337b47} 
+const std\+::string ENCRYPTED\+\_\+\+FILE = "{}data.\+bin.\+enc"{}}
+
+\Hypertarget{file__operations_8cpp_a39c84768b651c79deaa506fb9db50ad0}\index{file\_operations.cpp@{file\_operations.cpp}!ENCRYPTION\_PASSWORD@{ENCRYPTION\_PASSWORD}}
+\index{ENCRYPTION\_PASSWORD@{ENCRYPTION\_PASSWORD}!file\_operations.cpp@{file\_operations.cpp}}
+\doxysubsubsection{\texorpdfstring{ENCRYPTION\_PASSWORD}{ENCRYPTION\_PASSWORD}}
+{\footnotesize\ttfamily \label{file__operations_8cpp_a39c84768b651c79deaa506fb9db50ad0} 
+const std\+::string ENCRYPTION\+\_\+\+PASSWORD = "{}Cyber\+Owl-\/CTF"{}}
+
+\Hypertarget{file__operations_8cpp_a4c086f0a8df42accf25c9a4336c148c3}\index{file\_operations.cpp@{file\_operations.cpp}!TEMP\_DATA\_FILE@{TEMP\_DATA\_FILE}}
+\index{TEMP\_DATA\_FILE@{TEMP\_DATA\_FILE}!file\_operations.cpp@{file\_operations.cpp}}
+\doxysubsubsection{\texorpdfstring{TEMP\_DATA\_FILE}{TEMP\_DATA\_FILE}}
+{\footnotesize\ttfamily \label{file__operations_8cpp_a4c086f0a8df42accf25c9a4336c148c3} 
+const std\+::string TEMP\+\_\+\+DATA\+\_\+\+FILE = "{}data\+\_\+raw.\+bin"{}}
+

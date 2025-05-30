@@ -1,0 +1,11 @@
+<map id="Normative" name="Normative">
+<area shape="rect" id="Node000001" title=" " alt="" coords="147,5,247,224"/>
+<area shape="rect" id="Node000002" href="$structPullUps.html" title=" " alt="" coords="5,272,83,405"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,202,85,283,80,280,137,199"/>
+<area shape="rect" id="Node000003" href="$structRun100.html" title=" " alt="" coords="107,272,183,405"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,239,163,273,158,272,166,238"/>
+<area shape="rect" id="Node000004" href="$structRun1000.html" title=" " alt="" coords="207,272,291,405"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="229,238,237,272,231,273,223,239"/>
+<area shape="rect" id="Node000005" href="$structSwim.html" title=" " alt="" coords="316,272,380,405"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="258,200,306,271,318,288,314,291,302,273,253,203"/>
+</map>

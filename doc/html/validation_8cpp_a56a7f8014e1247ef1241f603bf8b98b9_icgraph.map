@@ -1,0 +1,15 @@
+<map id="isValidName" name="isValidName">
+<area shape="rect" id="Node000001" title=" " alt="" coords="463,56,558,83"/>
+<area shape="rect" id="Node000002" href="$student__manager_8cpp.html#a296bc20e4de770091ae3270bbca51366" title=" " alt="" coords="112,5,200,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="448,54,415,47,298,31,200,23,200,18,299,26,416,41,450,49"/>
+<area shape="rect" id="Node000004" href="$student__manager_8cpp.html#ac68e9c50d3fd6078f5a0444642c6573e" title=" " alt="" coords="292,56,380,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="448,72,380,72,380,67,448,67"/>
+<area shape="rect" id="Node000005" href="$txt__importer_8cpp.html#ad73ed2db7747f4eba6e23d45d6c0d658" title=" " alt="" coords="257,107,415,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="449,90,385,109,384,104,448,85"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="108,41,56,62,54,57,106,36"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="277,72,55,72,55,67,277,67"/>
+<area shape="rect" id="Node000006" href="$student__manager_8cpp.html#a59cac15328c5b875dbe9096b5f9aa15d" title=" " alt="" coords="103,107,209,133"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="241,123,209,123,209,117,241,117"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="106,103,54,82,56,77,108,98"/>
+</map>
