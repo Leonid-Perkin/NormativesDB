@@ -2,13 +2,16 @@
 #include <fstream>
 #include <iostream>
 #include "normative.h"
+#include "crypto_utils.h"
 
-const std::string DATA_FILE = "data.bin";
+const std::string TEMP_DATA_FILE = "data_raw.bin";
+const std::string ENCRYPTED_FILE = "data.bin.enc";
+const std::string ENCRYPTION_PASSWORD = "CyberOwl-CTF";
 
 void saveToFile(const std::vector<Student>& students) {
-    std::ofstream out(DATA_FILE, std::ios::binary);
+    std::ofstream out(TEMP_DATA_FILE, std::ios::binary);
     if (!out) {
-        std::cerr << "Ошибка при открытии файла для записи\n";
+        std::cerr << "Ошибка при открытии временного файла для записи\n";
         return;
     }
 
@@ -55,12 +58,23 @@ void saveToFile(const std::vector<Student>& students) {
         std::cerr << "Ошибка при записи в файл: " << e.what() << "\n";
     }
     out.close();
+
+    if (!encryptFile(TEMP_DATA_FILE, ENCRYPTED_FILE, ENCRYPTION_PASSWORD)) {
+        std::cerr << "Ошибка при шифровании файла\n";
+    } else {
+        std::remove(TEMP_DATA_FILE.c_str());
+    }
 }
 
 void loadFromFile(std::vector<Student>& students) {
-    std::ifstream in(DATA_FILE, std::ios::binary);
+    if (!decryptFile(ENCRYPTED_FILE, TEMP_DATA_FILE, ENCRYPTION_PASSWORD)) {
+        std::cout << "Файл не найден или не удалось расшифровать. Начинаем с пустой базы\n";
+        return;
+    }
+
+    std::ifstream in(TEMP_DATA_FILE, std::ios::binary);
     if (!in) {
-        std::cout << "Файл данных не найден, начинаем с пустой базы\n";
+        std::cout << "Ошибка при открытии временного файла\n";
         return;
     }
 
@@ -127,4 +141,5 @@ void loadFromFile(std::vector<Student>& students) {
         students.clear();
     }
     in.close();
+    std::remove(TEMP_DATA_FILE.c_str());
 }
