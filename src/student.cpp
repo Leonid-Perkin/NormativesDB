@@ -38,22 +38,34 @@ bool Student::hasDebt(const std::string& normativeType) const {
 
 
 void Student::printTableHeader() {
+    const int widthSurname = 15;
+    const int widthInitials = 10;
+    const int widthYear = 6;
+    const int widthGroup = 12;
+    const int widthRecordBook = 15;
     std::cout << std::left
-              << std::setw(15) << "Фамилия"
-              << std::setw(10) << "Инициалы"
-              << std::setw(10) << "Год"
-              << std::setw(15) << "Группа"
-              << std::setw(20) << "Зачетная книжка"
+              << std::setw(widthSurname) << "Фамилия" << " "
+              << std::setw(widthInitials) << "Инициалы" << " "
+              << std::setw(widthYear) << "Год" << " "
+              << std::setw(widthGroup) << "Группа" << " "
+              << std::setw(widthRecordBook) << "Зачетная книжка"
               << '\n';
-    std::cout << std::string(70, '-') << '\n';
+    int totalWidth = widthSurname + widthInitials + widthYear + widthGroup + widthRecordBook + 4;
+    std::cout << std::string(totalWidth, '-') << '\n';
 }
 
 void Student::printTableRow() const {
+    std::string yearStr = std::to_string(admissionYear);
+    const int widthSurname = 15;
+    const int widthInitials = 10;
+    const int widthYear = 6;
+    const int widthGroup = 12;
+    const int widthRecordBook = 15;
     std::cout << std::left
-              << std::setw(15) << surname
-              << std::setw(10) << initials
-              << std::setw(10) << admissionYear
-              << std::setw(15) << groupName
-              << std::setw(20) << recordBook
+              << std::setw(widthSurname) << surname << " "
+              << std::setw(widthInitials) << initials << " "
+              << std::setw(widthYear) << yearStr << " "
+              << std::setw(widthGroup) << groupName << " "
+              << std::setw(widthRecordBook) << recordBook
               << '\n';
 }
