@@ -121,9 +121,9 @@ void addStudent(std::vector<Student>& students) {
         } while (true);
 
         do {
-            std::cout << "Оценка (1-5): ";
-            if (!(std::cin >> grade) || grade < 1 || grade > 5) {
-                std::cout << "Ошибка: Оценка должна быть от 1 до 5\n";
+            std::cout << "Оценка (2-5): ";
+            if (!(std::cin >> grade) || grade < 2 || grade > 5) {
+                std::cout << "Ошибка: Оценка должна быть от 2 до 5\n";
                 clearInputBuffer();
                 continue;
             }
@@ -318,9 +318,9 @@ void editStudent(std::vector<Student>& students) {
                     } while (true);
 
                     do {
-                        std::cout << "Оценка (1-5): ";
-                        if (!(std::cin >> grade) || grade < 1 || grade > 5) {
-                            std::cout << "Ошибка: Оценка должна быть от 1 до 5\n";
+                        std::cout << "Оценка (2-5): ";
+                        if (!(std::cin >> grade) || grade < 2 || grade > 5) {
+                            std::cout << "Ошибка: Оценка должна быть от 2 до 5\n";
                             clearInputBuffer();
                             continue;
                         }
@@ -450,7 +450,7 @@ void printAll(const std::vector<Student>& students) {
         s.printTableRow();
     }
 
-    std::cout << "\nПодробная информация о нормативных результатах:\n";
+    std::cout << "\nПодробная информация о результатах:\n";
     for (const auto& s : students) {
         std::cout << "\nСтудент: " << s.surname << " " << s.initials << "\n";
         if (s.tests.empty()) {
@@ -477,7 +477,7 @@ void printDebtorsByNorm(const std::vector<Student>& students) {
         }
     }
     if (!found) {
-        std::cout << "Задолжников по нормативу '" << norm << "' не найдено\n";
+        std::cout << "Должников по нормативу '" << norm << "' не найдено\n";
     }
 }
 
