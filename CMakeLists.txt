@@ -12,4 +12,5 @@ add_executable(NormativesDB
         src/validation.cpp
         src/file_operations.cpp
         src/student_manager.cpp
+        src/txt_importer.cpp
 )

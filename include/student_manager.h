@@ -8,8 +8,10 @@
 void showMenu();
 void addStudent(std::vector<Student>& students);
 void deleteStudent(std::vector<Student>& students);
+void editStudent(std::vector<Student>& students);
 void printAll(const std::vector<Student>& students);
 void printDebtorsByNorm(const std::vector<Student>& students);
 void sortGroupsByAvgGrade(const std::vector<Student>& students);
+void importFromTxt(std::vector<Student>& students);
 
 #endif

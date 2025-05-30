@@ -31,8 +31,10 @@ int main() {
             case 3: printDebtorsByNorm(students); break;
             case 4: sortGroupsByAvgGrade(students); break;
             case 5: deleteStudent(students); break;
+            case 6: editStudent(students); break;
+            case 7: importFromTxt(students); break;
             case 0: saveToFile(students); break;
-            default: std::cout << "Неверный выбор! Введите число от 0 до 5\n";
+            default: std::cout << "Неверный выбор! Введите число от 0 до 7\n";
         }
     } while (choice != 0);
 
