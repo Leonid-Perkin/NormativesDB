@@ -16,6 +16,7 @@ void showMenu() {
     std::cout << "5. Удалить студента\n";
     std::cout << "6. Редактировать студента\n";
     std::cout << "7. Импортировать из TXT\n";
+    std::cout << "8. Показать результаты нормативов группы\n";
     std::cout << "0. Выход\n";
 }
 
@@ -531,5 +532,34 @@ void importFromTxt(std::vector<Student>& students) {
         std::cout << "Данные успешно импортированы\n";
     } catch (const std::exception& e) {
         std::cerr << "Ошибка при импорте: " << e.what() << "\n";
+    }
+}
+
+void printNormResultsByGroup(const std::vector<Student>& students) {
+    std::string groupName, normType;
+    std::cout << "Введите название группы: ";
+    clearInputBuffer();
+    std::getline(std::cin, groupName);
+
+    std::cout << "Введите название норматива (Бег 100м / Бег 1000м / Подтягивания / Плавание): ";
+    std::getline(std::cin, normType);
+
+    bool found = false;
+    std::cout << "\nРезультаты норматива '" << normType << "' для группы '" << groupName << "':\n";
+    std::cout << std::string(60, '-') << "\n";
+    for (const auto& s : students) {
+        if (s.groupName == groupName) {
+            for (const auto& test : s.tests) {
+                if (test->name == normType) {
+                    std::cout << "Студент: " << s.surname << " " << s.initials << "\n";
+                    test->print();
+                    found = true;
+                }
+            }
+        }
+    }
+
+    if (!found) {
+        std::cout << "Результатов для норматива '" << normType << "' в группе '" << groupName << "' не найдено\n";
     }
 }

@@ -33,8 +33,9 @@ int main() {
             case 5: deleteStudent(students); break;
             case 6: editStudent(students); break;
             case 7: importFromTxt(students); break;
+            case 8: printNormResultsByGroup(students); break;
             case 0: saveToFile(students); break;
-            default: std::cout << "Неверный выбор! Введите число от 0 до 7\n";
+            default: std::cout << "Неверный выбор! Введите число от 0 до 8\n";
         }
     } while (choice != 0);
 

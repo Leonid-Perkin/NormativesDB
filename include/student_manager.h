@@ -13,5 +13,6 @@ void printAll(const std::vector<Student>& students);
 void printDebtorsByNorm(const std::vector<Student>& students);
 void sortGroupsByAvgGrade(const std::vector<Student>& students);
 void importFromTxt(std::vector<Student>& students);
+void printNormResultsByGroup(const std::vector<Student>& students);
 
 #endif
