@@ -1,0 +1,83 @@
+digraph MainDiagram {
+	rankdir=TB size="10,15"
+	node [fillcolor=lightblue shape=box style=filled]
+	edge [fontsize=10]
+	start [label="Старт программы"]
+	init_locale [label="Инициализация локали
+(ru_RU.UTF-8)"]
+	init_error [label="Ошибка локали?" shape=diamond]
+	init_continue [label="Продолжить с
+локалью по умолчанию"]
+	load_data [label="Загрузка данных
+(loadFromFile -> decryptFile)"]
+	load_error [label="Ошибка загрузки?" shape=diamond]
+	load_empty [label="Начать с пустой базы"]
+	menu [label="Вывод главного меню
+(0-8 опции)"]
+	input_choice [label="Ввод выбора
+(choice)"]
+	input_valid [label="Валидный ввод?" shape=diamond]
+	input_error [label="Ошибка ввода
+(вывод сообщения)"]
+	clear_buffer [label="Очистка буфера
+(clearInputBuffer)"]
+	switch [label="Выбор опции
+(switch case)" shape=diamond]
+	add_ref [label="Добавить студента
+(см. add_student_diagram.png)" fillcolor=lightgreen shape=ellipse]
+	print_all [label="Показать всех
+(printAll)"]
+	debtors [label="Список должников
+(printDebtorsByNorm)"]
+	sort_groups [label="Сортировка групп
+(sortGroupsByAvgGrade)"]
+	delete [label="Удалить студента
+(deleteStudent)"]
+	edit_ref [label="Редактировать студента
+(см. edit_student_diagram.png)" fillcolor=lightgreen shape=ellipse]
+	import_ref [label="Импорт из TXT
+(см. import_txt_diagram.png)" fillcolor=lightgreen shape=ellipse]
+	norm_results [label="Результаты группы
+(printNormResultsByGroup)"]
+	exit [label="Сохранение данных
+(saveToFile -> encryptFile)"]
+	exit_error [label="Ошибка сохранения?" shape=diamond]
+	exit_error_msg [label="Вывод ошибки"]
+	end [label="Конец программы"]
+	start -> init_locale
+	init_locale -> init_error
+	init_error -> init_continue [label="Да"]
+	init_error -> load_data [label="Нет"]
+	init_continue -> load_data
+	load_data -> load_error
+	load_error -> load_empty [label="Да"]
+	load_error -> menu [label="Нет"]
+	load_empty -> menu
+	menu -> input_choice
+	input_choice -> input_valid
+	input_valid -> input_error [label="Нет"]
+	input_valid -> switch [label="Да"]
+	input_error -> clear_buffer
+	clear_buffer -> menu
+	switch -> add_ref [label=1]
+	switch -> print_all [label=2]
+	switch -> debtors [label=3]
+	switch -> sort_groups [label=4]
+	switch -> delete [label=5]
+	switch -> edit_ref [label=6]
+	switch -> import_ref [label=7]
+	switch -> norm_results [label=8]
+	switch -> exit [label=0]
+	add_ref -> menu
+	print_all -> menu
+	debtors -> menu
+	sort_groups -> menu
+	delete -> menu
+	edit_ref -> menu
+	import_ref -> menu
+	norm_results -> menu
+	exit -> exit_error
+	exit_error -> exit_error_msg [label="Да"]
+	exit_error -> end [label="Нет"]
+	exit_error_msg -> end
+}

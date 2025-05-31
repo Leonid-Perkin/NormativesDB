@@ -1,0 +1,38 @@
+digraph ImportTxtDiagram {
+	rankdir=TB size="10,15"
+	node [fillcolor=lightblue shape=box style=filled]
+	edge [fontsize=10]
+	import_start [label="Импорт из TXT
+(importFromTxt)"]
+	import_input [label="Ввод имени файла"]
+	import_open [label="Открытие файла"]
+	import_open_valid [label="Файл открыт?" shape=diamond]
+	import_open_error [label="Ошибка
+(файл не открыт)"]
+	import_read [label="Чтение строк файла"]
+	import_parse [label="Парсинг данных
+(разделение по ключам)"]
+	import_validate [label="Валидация данных
+(isValidName, isValidDate и т.д.)"]
+	import_validate_error [label="Ошибка валидации?" shape=diamond]
+	import_validate_error_msg [label="Вывод ошибки"]
+	import_add [label="Добавление студентов
+(insert)"]
+	import_save [label="Сохранение
+(saveToFile)"]
+	import_end [label="Возврат в меню"]
+	import_start -> import_input
+	import_input -> import_open
+	import_open -> import_open_valid
+	import_open_valid -> import_open_error [label="Нет"]
+	import_open_valid -> import_read [label="Да"]
+	import_open_error -> import_end
+	import_read -> import_parse
+	import_parse -> import_validate
+	import_validate -> import_validate_error [label="Ошибка"]
+	import_validate -> import_add [label="Успех"]
+	import_validate_error -> import_validate_error_msg
+	import_validate_error_msg -> import_end
+	import_add -> import_save
+	import_save -> import_end
+}

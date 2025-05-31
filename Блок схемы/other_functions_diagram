@@ -1,0 +1,92 @@
+digraph OtherFunctionsDiagram {
+	rankdir=TB size="10,15"
+	node [fillcolor=lightblue shape=box style=filled]
+	edge [fontsize=10]
+	print_all_start [label="Показать всех
+(printAll)"]
+	print_all_check [label="Список пуст?" shape=diamond]
+	print_all_empty [label="Вывод: Список пуст"]
+	print_all_table [label="Вывод таблицы
+(printTableHeader, printTableRow)"]
+	print_all_details [label="Вывод нормативов"]
+	print_all_end [label="Возврат в меню"]
+	debtors_start [label="Список должников
+(printDebtorsByNorm)"]
+	debtors_input [label="Ввод норматива"]
+	debtors_check [label="Проверка должников
+(hasDebt)"]
+	debtors_found [label="Должники найдены?" shape=diamond]
+	debtors_none [label="Вывод: Должников нет"]
+	debtors_print [label="Вывод должников
+(print)"]
+	debtors_end [label="Возврат в меню"]
+	sort_groups_start [label="Сортировка групп
+(sortGroupsByAvgGrade)"]
+	sort_groups_input [label="Ввод норматива
+(или пусто)"]
+	sort_groups_calc [label="Вычисление среднего
+(averageGrade)"]
+	sort_groups_sort [label="Сортировка групп
+(std::sort)"]
+	sort_groups_print [label="Вывод рейтинга"]
+	sort_groups_end [label="Возврат в меню"]
+	delete_start [label="Удалить студента
+(deleteStudent)"]
+	delete_input [label="Ввод номера зачётки"]
+	delete_find [label="Поиск студента
+(std::find_if)"]
+	delete_found [label="Студент найден?" shape=diamond]
+	delete_not_found [label="Вывод: Студент не найден"]
+	delete_confirm [label="Подтверждение удаления
+(y/n)" shape=diamond]
+	delete_cancel [label="Вывод: Удаление отменено"]
+	delete_remove [label="Удаление
+(erase, saveToFile)"]
+	delete_end [label="Возврат в меню"]
+	norm_results_start [label="Результаты группы
+(printNormResultsByGroup)"]
+	norm_results_input_group [label="Ввод группы"]
+	norm_results_input_norm [label="Ввод норматива"]
+	norm_results_check [label="Поиск результатов
+(проверка groupName, name)"]
+	norm_results_found [label="Результаты найдены?" shape=diamond]
+	norm_results_none [label="Вывод: Результатов нет"]
+	norm_results_print [label="Вывод результатов
+(print)"]
+	norm_results_end [label="Возврат в меню"]
+	print_all_start -> print_all_check
+	print_all_check -> print_all_empty [label="Да"]
+	print_all_check -> print_all_table [label="Нет"]
+	print_all_table -> print_all_details
+	print_all_details -> print_all_end
+	debtors_start -> debtors_input
+	debtors_input -> debtors_check
+	debtors_check -> debtors_found
+	debtors_found -> debtors_none [label="Нет"]
+	debtors_found -> debtors_print [label="Да"]
+	debtors_none -> debtors_end
+	debtors_print -> debtors_end
+	sort_groups_start -> sort_groups_input
+	sort_groups_input -> sort_groups_calc
+	sort_groups_calc -> sort_groups_sort
+	sort_groups_sort -> sort_groups_print
+	sort_groups_print -> sort_groups_end
+	delete_start -> delete_input
+	delete_input -> delete_find
+	delete_find -> delete_found
+	delete_found -> delete_not_found [label="Нет"]
+	delete_found -> delete_confirm [label="Да"]
+	delete_not_found -> delete_end
+	delete_confirm -> delete_cancel [label="Нет"]
+	delete_confirm -> delete_remove [label="Да"]
+	delete_cancel -> delete_end
+	delete_remove -> delete_end
+	norm_results_start -> norm_results_input_group
+	norm_results_input_group -> norm_results_input_norm
+	norm_results_input_norm -> norm_results_check
+	norm_results_check -> norm_results_found
+	norm_results_found -> norm_results_none [label="Нет"]
+	norm_results_found -> norm_results_print [label="Да"]
+	norm_results_none -> norm_results_end
+	norm_results_print -> norm_results_end
+}

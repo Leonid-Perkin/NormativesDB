@@ -1,0 +1,112 @@
+digraph AddStudentDiagram {
+	rankdir=TB size="10,15"
+	node [fillcolor=lightblue shape=box style=filled]
+	edge [fontsize=10]
+	add_start [label="Добавить студента
+(addStudent)"]
+	add_surname [label="Ввод фамилии"]
+	add_surname_valid [label="Валидная фамилия?
+(isValidName)" shape=diamond]
+	add_surname_error [label="Ошибка
+(управляющие символы)"]
+	add_initials [label="Ввод инициалов"]
+	add_initials_valid [label="Валидные инициалы?
+(isValidName)" shape=diamond]
+	add_initials_error [label="Ошибка
+(управляющие символы)"]
+	add_year [label="Ввод года поступления"]
+	add_year_valid [label="Валидный год?
+(isValidYear)" shape=diamond]
+	add_year_error [label="Ошибка
+(2000-2025)"]
+	add_group [label="Ввод группы"]
+	add_group_valid [label="Валидная группа?
+(isValidGroupName)" shape=diamond]
+	add_group_error [label="Ошибка
+(кириллица, цифры, -, .)"]
+	add_record [label="Ввод номера зачётки"]
+	add_record_valid [label="Валидный номер?
+(длина <= 20)" shape=diamond]
+	add_record_error [label="Ошибка
+(слишком длинный)"]
+	add_norm_count [label="Ввод количества нормативов
+(0-10)"]
+	add_norm_count_valid [label="Валидное число?
+(0-10)" shape=diamond]
+	add_norm_count_error [label="Ошибка
+(введите 0-10)"]
+	add_norm_loop [label="Цикл по нормативам" shape=diamond]
+	add_norm_type [label="Ввод типа норматива
+(1-4)"]
+	add_norm_type_valid [label="Валидный тип?
+(1-4)" shape=diamond]
+	add_norm_type_error [label="Ошибка
+(введите 1-4)"]
+	add_norm_date [label="Ввод даты
+(ДД.ММ.ГГГГ)"]
+	add_norm_date_valid [label="Валидная дата?
+(isValidDate)" shape=diamond]
+	add_norm_date_error [label="Ошибка
+(неверный формат)"]
+	add_norm_result [label="Ввод результата"]
+	add_norm_result_valid [label="Валидный результат?
+(>= 0)" shape=diamond]
+	add_norm_result_error [label="Ошибка
+(отрицательный)"]
+	add_norm_grade [label="Ввод оценки
+(2-5)"]
+	add_norm_grade_valid [label="Валидная оценка?
+(2-5)" shape=diamond]
+	add_norm_grade_error [label="Ошибка
+(введите 2-5)"]
+	add_norm_save [label="Добавление норматива
+(в зависимости от типа)"]
+	add_save [label="Сохранение студента
+(push_back, saveToFile)"]
+	add_end [label="Возврат в меню"]
+	add_start -> add_surname
+	add_surname -> add_surname_valid
+	add_surname_valid -> add_surname_error [label="Нет"]
+	add_surname_valid -> add_initials [label="Да"]
+	add_surname_error -> add_surname
+	add_initials -> add_initials_valid
+	add_initials_valid -> add_initials_error [label="Нет"]
+	add_initials_valid -> add_year [label="Да"]
+	add_initials_error -> add_initials
+	add_year -> add_year_valid
+	add_year_valid -> add_year_error [label="Нет"]
+	add_year_valid -> add_group [label="Да"]
+	add_year_error -> add_year
+	add_group -> add_group_valid
+	add_group_valid -> add_group_error [label="Нет"]
+	add_group_valid -> add_record [label="Да"]
+	add_group_error -> add_group
+	add_record -> add_record_valid
+	add_record_valid -> add_record_error [label="Нет"]
+	add_record_valid -> add_norm_count [label="Да"]
+	add_record_error -> add_record
+	add_norm_count -> add_norm_count_valid
+	add_norm_count_valid -> add_norm_count_error [label="Нет"]
+	add_norm_count_valid -> add_norm_loop [label="Да"]
+	add_norm_count_error -> add_norm_count
+	add_norm_loop -> add_norm_type [label="Есть нормативы"]
+	add_norm_loop -> add_save [label="Нет нормативов"]
+	add_norm_type -> add_norm_type_valid
+	add_norm_type_valid -> add_norm_type_error [label="Нет"]
+	add_norm_type_valid -> add_norm_date [label="Да"]
+	add_norm_type_error -> add_norm_type
+	add_norm_date -> add_norm_date_valid
+	add_norm_date_valid -> add_norm_date_error [label="Нет"]
+	add_norm_date_valid -> add_norm_result [label="Да"]
+	add_norm_date_error -> add_norm_date
+	add_norm_result -> add_norm_result_valid
+	add_norm_result_valid -> add_norm_result_error [label="Нет"]
+	add_norm_result_valid -> add_norm_grade [label="Да"]
+	add_norm_result_error -> add_norm_result
+	add_norm_grade -> add_norm_grade_valid
+	add_norm_grade_valid -> add_norm_grade_error [label="Нет"]
+	add_norm_grade_valid -> add_norm_save [label="Да"]
+	add_norm_grade_error -> add_norm_grade
+	add_norm_save -> add_norm_loop
+	add_save -> add_end
+}

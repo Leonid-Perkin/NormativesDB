@@ -1,0 +1,177 @@
+digraph EditStudentDiagram {
+	rankdir=TB size="15,20"
+	node [fillcolor=lightblue shape=box style=filled]
+	edge [fontsize=10]
+	edit_start [label="Редактировать студента
+(editStudent)"]
+	edit_input [label="Ввод номера зачётки"]
+	edit_find [label="Поиск студента
+(std::find_if)"]
+	edit_found [label="Студент найден?" shape=diamond]
+	edit_not_found [label="Вывод: Студент не найден"]
+	edit_show [label="Вывод текущих данных
+(print)"]
+	edit_menu [label="Меню редактирования
+(0-8)"]
+	edit_menu_valid [label="Валидный выбор?
+(0-8)" shape=diamond]
+	edit_menu_error [label="Ошибка
+(введите 0-8)"]
+	edit_switch [label="Выбор действия" shape=diamond]
+	edit_surname [label="Редактировать фамилию"]
+	edit_surname_valid [label="Валидная фамилия?
+(isValidName)" shape=diamond]
+	edit_surname_error [label="Ошибка
+(управляющие символы)"]
+	edit_initials [label="Редактировать инициалы"]
+	edit_initials_valid [label="Валидные инициалы?
+(isValidName)" shape=diamond]
+	edit_initials_error [label="Ошибка
+(управляющие символы)"]
+	edit_year [label="Редактировать год"]
+	edit_year_valid [label="Валидный год?
+(isValidYear)" shape=diamond]
+	edit_year_error [label="Ошибка
+(2000-2025)"]
+	edit_group [label="Редактировать группу"]
+	edit_group_valid [label="Валидная группа?
+(isValidGroupName)" shape=diamond]
+	edit_group_error [label="Ошибка
+(кириллица, цифры, -, .)"]
+	edit_record [label="Редактировать номер зачётки"]
+	edit_record_valid [label="Валидный номер?
+(длина <= 20)" shape=diamond]
+	edit_record_error [label="Ошибка
+(слишком длинный)"]
+	edit_add_norm [label="Добавить норматив"]
+	edit_norm_type [label="Ввод типа норматива
+(1-4)"]
+	edit_norm_type_valid [label="Валидный тип?
+(1-4)" shape=diamond]
+	edit_norm_type_error [label="Ошибка
+(введите 1-4)"]
+	edit_norm_date [label="Ввод даты"]
+	edit_norm_date_valid [label="Валидная дата?
+(isValidDate)" shape=diamond]
+	edit_norm_date_error [label="Ошибка
+(неверный формат)"]
+	edit_norm_result [label="Ввод результата"]
+	edit_norm_result_valid [label="Валидный результат?
+(>= 0)" shape=diamond]
+	edit_norm_result_error [label="Ошибка
+(отрицательный)"]
+	edit_norm_grade [label="Ввод оценки
+(1-5)"]
+	edit_norm_grade_valid [label="Валидная оценка?
+(1-5)" shape=diamond]
+	edit_norm_grade_error [label="Ошибка
+(введите 1-5)"]
+	edit_norm_update [label="Добавление норматива"]
+	edit_norm_edit [label="Редактировать норматив"]
+	edit_norm_index [label="Ввод номера норматива"]
+	edit_norm_index_valid [label="Валидный номер?" shape=diamond]
+	edit_norm_index_error [label="Ошибка
+(неверный номер)"]
+	edit_norm_edit_type [label="Ввод нового типа
+(1-4)"]
+	edit_norm_edit_date [label="Ввод новой даты"]
+	edit_norm_edit_result [label="Ввод результата"]
+	edit_norm_edit_grade [label="Ввод оценки"]
+	edit_norm_edit_save [label="Обновление норматива"]
+	edit_norm_delete [label="Удалить норматив"]
+	edit_norm_delete_index [label="Ввод номера"]
+	edit_norm_delete_valid [label="Валидный номер?" shape=diamond]
+	edit_norm_delete_error [label="Ошибка
+(неверный номер)"]
+	edit_norm_delete_do [label="Удаление норматива"]
+	edit_save [label="Сохранение
+(saveToFile)"]
+	edit_end [label="Возврат в меню"]
+	edit_start -> edit_input
+	edit_input -> edit_find
+	edit_find -> edit_found
+	edit_found -> edit_not_found [label="Нет"]
+	edit_found -> edit_show [label="Да"]
+	edit_not_found -> edit_end
+	edit_show -> edit_menu
+	edit_menu -> edit_menu_valid
+	edit_menu_valid -> edit_menu_error [label="Нет"]
+	edit_menu_valid -> edit_switch [label="Да"]
+	edit_menu_error -> edit_menu
+	edit_switch -> edit_surname [label=1]
+	edit_switch -> edit_initials [label=2]
+	edit_switch -> edit_year [label=3]
+	edit_switch -> edit_group [label=4]
+	edit_switch -> edit_record [label=5]
+	edit_switch -> edit_add_norm [label=6]
+	edit_switch -> edit_norm_edit [label=7]
+	edit_switch -> edit_norm_delete [label=8]
+	edit_switch -> edit_save [label=0]
+	edit_surname -> edit_surname_valid
+	edit_surname_valid -> edit_surname_error [label="Нет"]
+	edit_surname_valid -> edit_menu [label="Да"]
+	edit_surname_error -> edit_surname
+	edit_initials -> edit_initials_valid
+	edit_initials_valid -> edit_initials_error [label="Нет"]
+	edit_initials_valid -> edit_menu [label="Да"]
+	edit_initials_error -> edit_initials
+	edit_year -> edit_year_valid
+	edit_year_valid -> edit_year_error [label="Нет"]
+	edit_year_valid -> edit_menu [label="Да"]
+	edit_year_error -> edit_year
+	edit_group -> edit_group_valid
+	edit_group_valid -> edit_group_error [label="Нет"]
+	edit_group_valid -> edit_menu [label="Да"]
+	edit_group_error -> edit_group
+	edit_record -> edit_record_valid
+	edit_record_valid -> edit_record_error [label="Нет"]
+	edit_record_valid -> edit_menu [label="Да"]
+	edit_record_error -> edit_record
+	edit_add_norm -> edit_norm_type
+	edit_norm_type -> edit_norm_type_valid
+	edit_norm_type_valid -> edit_norm_type_error [label="Нет"]
+	edit_norm_type_valid -> edit_norm_date [label="Да"]
+	edit_norm_type_error -> edit_norm_type
+	edit_norm_date -> edit_norm_date_valid
+	edit_norm_date_valid -> edit_norm_date_error [label="Нет"]
+	edit_norm_date_valid -> edit_norm_result [label="Да"]
+	edit_norm_date_error -> edit_norm_date
+	edit_norm_result -> edit_norm_result_valid
+	edit_norm_result_valid -> edit_norm_result_error [label="Нет"]
+	edit_norm_result_valid -> edit_norm_grade [label="Да"]
+	edit_norm_result_error -> edit_norm_result
+	edit_norm_grade -> edit_norm_grade_valid
+	edit_norm_grade_valid -> edit_norm_grade_error [label="Нет"]
+	edit_norm_grade_valid -> edit_norm_update [label="Да"]
+	edit_norm_grade_error -> edit_norm_grade
+	edit_norm_update -> edit_menu
+	edit_norm_edit -> edit_norm_index
+	edit_norm_index -> edit_norm_index_valid
+	edit_norm_index_valid -> edit_norm_index_error [label="Нет"]
+	edit_norm_index_valid -> edit_norm_edit_type [label="Да"]
+	edit_norm_index_error -> edit_menu
+	edit_norm_edit_type -> edit_norm_type_valid
+	edit_norm_edit_type -> edit_norm_edit_date
+	edit_norm_edit_date -> edit_norm_date_valid
+	edit_norm_date_valid -> edit_norm_edit_result [label="Да"]
+	edit_norm_edit_result -> edit_norm_result_valid
+	edit_norm_result_valid -> edit_norm_edit_grade [label="Да"]
+	edit_norm_edit_grade -> edit_norm_grade_valid
+	edit_norm_grade_valid -> edit_norm_edit_save [label="Да"]
+	edit_norm_edit_save -> edit_menu
+	edit_norm_delete -> edit_norm_delete_index
+	edit_norm_delete_index [label="Ввод номера"]
+	edit_norm_delete_valid [label="Валидный номер?" shape=diamond]
+	edit_norm_delete_error [label="Ошибка
+(неверный номер)"]
+	edit_norm_delete_do [label="Удаление норматива"]
+	edit_save [label="Сохранение
+(saveToFile)"]
+	edit_end [label="Возврат в меню"]
+	edit_norm_delete_index -> edit_norm_delete_valid
+	edit_norm_delete_valid -> edit_norm_delete_error [label="Нет"]
+	edit_norm_delete_valid -> edit_norm_delete_do [label="Да"]
+	edit_norm_delete_error -> edit_menu
+	edit_norm_delete_do -> edit_menu
+	edit_save -> edit_end
+}
